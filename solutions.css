@@ -48,7 +48,7 @@
     } 
 }
 .ex-11-icon:hover{
-    animation: spin-part 5s linear;
+    animation: spin-part 3s linear;
 }
 @keyframes spin-part{
     75%{
@@ -84,3 +84,61 @@
     }
 }
 
+.ex-13-button:hover .ex-13-top-white{
+    animation: mvtop 5s linear;
+}
+@keyframes mvtop {
+    0%{
+        left: 10%;
+        top: -10px;
+    }
+    20%{
+        left: 80%;
+        top: -10px;
+    }
+    40%{
+        left: 80%;
+        top: 90%;
+    }
+    60%{
+        left: -10px;
+        top: 90%;
+    }
+    80%{
+        left: -10px;
+        top: -10px;
+    }
+    100%{
+        left: 10%;
+        top: -10px;
+    }
+}
+.ex-13-button:hover .ex-13-bottom-white{
+    animation: mvbot 5s linear;
+}
+@keyframes mvbot{
+    0%{
+        right: 20%;
+        bottom: -10px;
+    }
+    20%{
+        right: 80%;
+        bottom: -10px;
+    }
+    40%{
+        right: 80%;
+        bottom: 90%;
+    }
+    60%{
+        right: -10px;
+        bottom: 90%;
+    }
+    80%{
+        right: -10px;
+        bottom: -10px;
+    }
+    100%{
+        right: 20%;
+        bottom: -10px;
+    }
+}
