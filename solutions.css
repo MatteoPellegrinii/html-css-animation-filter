@@ -55,29 +55,32 @@
         transform: rotate(270deg);
     }  
 } 
-.ex-12-top-white{
-    animation: my-move 5s linear infinite;
+.ex-12-button:hover .ex-12-top-white {
+    animation: mymove 2s linear;
 }
-@keyframes my-move{
-    0%{
-        top: -10px;
+@keyframes mymove {
+    0% {
         left: 10%;
-        transform: rotate(0);
     }
-    25%{
-        top: -10px;
-        left: 90%;
-        transform: rotate(0);
-    }
-    50%{
-        transform: rotate(90deg);
-        left: 90%;
-        top: 55px;
-    }
-    100%{
-        transform: rotate(180deg);
+    50% {
         left: 70%;
-        top: 55px;
+    }
+    100% {
+        left: 10%;
+    }
+}
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: movebot 2s linear;
+}
+@keyframes movebot {
+    0% {
+        right: 20%;
+    }
+    50% {
+        right: 65%;
+    }
+    100% {
+        right: 20%;
     }
 }
 
